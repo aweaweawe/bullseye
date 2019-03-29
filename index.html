@@ -15,6 +15,14 @@
         100% {color:black;}
     }
 
+    @keyframes bordercolours {
+        0% {border-color:black;}
+        25% {border-color:#0687e2;}
+        50% {border-color: #a10716;}
+        75% {border-color:#f4ef42;}
+        100% {border-color:black;}
+    }
+
     #sitehead {
         font-family: 'Segoe UI';
         font-size: 50px;
@@ -66,6 +74,29 @@
         margin-left: -30px;
     }
 
+    #gimag {
+       position: absolute;
+       left: 20px;
+       top: 20px;
+       border-style: dotted;
+       animation: titlecolours;
+       animation-duration: 5s;
+       animation-delay: 2s;
+       animation-direction: reverse;
+       animation-iteration-count: infinite;
+    }
+
+    #simag {
+       position: absolute;
+       right: 20px;
+       top: 20px;
+       border-style: dotted;
+       animation: titlecolours;
+       animation-duration: 5s;
+       animation-delay: 2s;
+       animation-direction: reverse;
+       animation-iteration-count: infinite;
+    }
    
 
     /* unvisited link */
@@ -102,7 +133,7 @@ a:active {
     <div id="sitehead"><h1>Bullseye!</h1></div>
     <div id="subhead"><h2>It's on target and totally off the wall!</h2></div>
 
-<h3>Hello, welcome, and don’t forget to save up! This is the official website dedicated to the 1990 movie Bullseye! Directed by Michael Winner, starring Michael Caine, Roger Moore and Sally Kirkland. Now, this is truly one of the best movies there is. Citizen Kane? Left in the dust. Casablanca? Not even close. Groundhog Day? No way. Bullseye is in a class of it's own, and it demands veneration and adoration for its greatness. This webstie is the proper shrine for that, and more! I hope your time here is as good as three millions pounds worth [pause] of diamonds.</h3>
+<h3>Hello, welcome, and do not forget to save up! This is the official website dedicated to the 1990 movie Bullseye! Directed by Michael Winner, starring Michael Caine, Roger Moore and Sally Kirkland. Now, this is truly one of the best movies there is. Citizen Kane? Left in the dust. Casablanca? Not even close. Groundhog Day? No way. Bullseye is in a class of it's own, and it demands veneration and adoration for its greatness. This webstie is the proper shrine for that, and more! I hope your time here is as good as three millions pounds worth [pause] of diamonds.</h3>
 
 <div id="linkbox"><h4>Links</h4>
     
@@ -115,10 +146,15 @@ a:active {
         </ul>
 </div>
 
- <div>
-       <img src="https://i.imgur.com/bmHNbyG.jpg" width="300" height="300" alt="hi" class="inline" />
+ <div id="gimag">
+       <img src="https://i.imgur.com/bmHNbyG.jpg" width="200" height="200" alt="hi" class="inline" />
 
 </div>
+
+     <div id="simag">
+         <img src="https://i.imgur.com/5lpVdOY.png" width="200" height="200" alt="hi" class="inline" />
+
+    </div>
 
 </body>
 
