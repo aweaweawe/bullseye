@@ -120,6 +120,46 @@ a:active {
   color: blue;
 } 
 
+
+.button {
+  margin-left: 150px;
+  border-radius: 20px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 10px;
+  right: -30px;
+  transition: 0.5s;
+  font-size: 40px;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 </style>
 
 </head>
@@ -127,6 +167,11 @@ a:active {
 <body>
     
 <script>
+    function myGame() {
+        alert("Be warned, this quiz is tough! Now remember, for true or false questions, 'OK' is true and 'Cancel' is false.");
+        confirm("Is the last CIA agent the two crooks run into while they are going to the final auction disguiesed as a cleaner?")
+    }
+
 
 </script>
 
@@ -156,6 +201,8 @@ a:active {
          <img src="https://i.imgur.com/5lpVdOY.png" width="200" height="200" alt="hi" class="inline" />
 
     </div>
+
+    <button id="playbutton1" class="button" onclick="myGame()"><span>Take the Bullseye Quiz!</span></button>
 
 </body>
 
