@@ -161,6 +161,46 @@ a:active {
   opacity: 1;
   right: 0;
 }
+
+#quoteButton {
+  margin-right: 150px;
+  border-radius: 20px;
+  background-color: #f4511e;
+  border: none;
+  color: lightcyan;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#quoteButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#quoteButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 10px;
+  right: -30px;
+  transition: 0.5s;
+  font-size: 40px;
+}
+
+#quoteButton:hover span {
+  padding-right: 25px;
+}
+
+#quoteButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 </style>
 
 </head>
@@ -169,8 +209,68 @@ a:active {
     
 <script>
     function myGame() {
-        alert("Be warned, this quiz is tough! Now remember, for true or false questions, 'OK' is true and 'Cancel' is false.");
-        confirm("Is the last CIA agent the two crooks run into while they are going to the final auction disguiesed as a cleaner?")
+        alert("Be warned, this quiz is tough! Now remember, for true or false questions, 'OK' is true and 'Cancel' is false. Good luck.");
+        var q1 = confirm("True or false: The last CIA agent the two crooks run into while they are going to the final auction disguiesed as a cleaner."); /* false */
+        var q2 = confirm("True or false: Nigel Holden wears a kilt"); /* false */
+        var q3 = prompt("What is the name of the scientist who challenges Gerald as the scientific dinner?"); /* CHESTERTON */
+        q3 = q3.toUpperCase();
+        var q4 = confirm("True or false: Hicklar loves these scientific metres/meetings!"); /* false */
+        var q5 = confirm("True or false: The two scientist's efforts taking are taking a more sophisticated route."); /* true */
+        var q6 = confirm("True or false: Gerald's other associate at the beginnign of the film name is Ronald."); /*true*/
+        var q7 = confirm("True or false: Flo Flemming is Gerald's daughter."); /*false*/
+        var q8 = prompt("According to Sidney, what to all guard's wives have?"); /*LEGS*/
+        q8 = q8.toUpperCase();
+        var q9 = confirm("True or false: Gerlad hasn't been to the orient."); /*false*/
+        var q10 = prompt("What is the name of Elmer's wife?"); /*JOLENE*/
+        q10 = q10.toUpperCase();
+        var q11 = confirm("True or false: Sidney thinks steak is real food."); /*true*/
+        var q12 = prompt("Fill in the blank: 'Those ______s are after us!"); /*LIMEY*/
+        q12 = q12.toUpperCase();
+        var quizscore = 0;
+        if (q1 = false) {
+            quizscore = quizscore + 1
+        }
+        if (q2 = false) {
+            quizscore = quizscore + 1
+        }
+        if (q3 = "CHESTERTON") {
+            quizscore = quizscore + 1
+        }
+        if (q4 = false) {
+            quizscore = quizscore + 1
+        }
+        if (q5 = true) {
+            quizscore = quizscore + 1
+        }
+        if (q6 = true) {
+            quizscore = quizscore + 1
+        }
+        if (q7 = false) {
+            quizscore = quizscore + 1
+        }
+        if (q8 = "LEGS") {
+            quizscore = quizscore + 1
+        }
+        if (q9 = false) {
+            quizscore = quizscore + 1
+        }
+        if (q10 = "JOLENE") {
+            quizscore = quizscore + 1
+        }
+        if (q11 = true) {
+            quizscore = quizscore + 1
+        }
+        if (q12 = "LIMEY") {
+            quizscore = quizscore + 1
+        }
+
+        alert("You got " + quizscore + " out of 12.");
+
+    }
+
+    function ranQuote() {
+        var quoteNum = Math.floor((Math.random() * 10) + 1); 
+        alert(quoteNum);
     }
 
 
@@ -206,6 +306,8 @@ a:active {
     </div>
 
     <button id="playbutton1" class="button" onclick="myGame()"><span>Take the Bullseye Quiz!</span></button>
+
+    <button id="quoteButton" class="button" onclick="ranQuote()"><span>Get a random quote!</span></button>
 
 </body>
 
