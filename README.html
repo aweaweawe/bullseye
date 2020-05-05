@@ -1,2 +1,387 @@
 <!DOCUTYPE html>
 
+<html>
+
+<head>
+    
+<title>Bullseye Appreciation Zone</title>
+    
+<style>
+
+    @keyframes titlecolours {
+        0% {color:black;}
+        25% {color:#0687e2;}
+        50% {color: #a10716;}
+        75% {color:#f4ef42;}
+        100% {color:black;}
+    }
+
+    @keyframes bordercolours {
+        0% {border-color:black;}
+        25% {border-color:#0687e2;}
+        50% {border-color: #a10716;}
+        75% {border-color:#f4ef42;}
+        100% {border-color:black;}
+    }
+
+    #sitehead {
+        font-family: 'Segoe UI';
+        font-size: 50px;
+        position: center;
+        align-content: center;
+        margin-left: auto;
+        text-align: center;
+        margin-bottom: 1px;
+        animation: titlecolours;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+    }
+
+    #subhead {
+        font-family: 'Segoe UI';
+        position: center;
+        align-content: center;
+        margin-left: auto;
+        text-align: center;
+        margin-top: 1px;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+       font-family: 'Segoe UI';
+       object-position: center;
+       text-align: center;
+    }
+
+    #linkbox {
+        position:center;
+        border:3px groove;
+        border-color: palevioletred;
+        border-radius: 10px 5px;
+        margin-left: 600px;
+        margin-right: 600px;
+        margin-bottom: 50px;
+        font-family: 'Segoe UI';
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    ul { 
+        text-align: center;
+        margin-left: -30px;
+        line-height:200%
+    }
+
+    #gimag {
+       position: absolute;
+       left: 20px;
+       top: 20px;
+       border-style: dotted;
+       animation: titlecolours;
+       animation-duration: 5s;
+       animation-delay: 2s;
+       animation-direction: reverse;
+       animation-iteration-count: infinite;
+    }
+
+    #simag {
+       position: absolute;
+       right: 20px;
+       top: 20px;
+       border-style: dotted;
+       animation: titlecolours;
+       animation-duration: 5s;
+       animation-delay: 2s;
+       animation-direction: reverse;
+       animation-iteration-count: infinite;
+    }
+   
+
+    /* unvisited link */
+a:link {
+  color: cadetblue;
+}
+
+/* visited link */
+a:visited {
+  color: darkviolet;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+
+
+#playbutton1 {
+  margin-left: 150px;
+  border-radius: 20000px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#playbutton1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#playbutton1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 10px;
+  right: -30px;
+  transition: 0.5s;
+  font-size: 40px;
+}
+
+#playbutton1:hover span {
+  padding-right: 25px;
+}
+
+#playbutton1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#quoteButton {
+  margin-left: 500px;
+  border-radius: 20px;
+  background-color: #0D55E6;
+  border: none;
+  color: #F3C22F;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#quoteButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#quoteButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 10px;
+  right: -30px;
+  transition: 0.5s;
+  font-size: 40px;
+}
+
+#quoteButton:hover span {
+  padding-right: 25px;
+}
+
+#quoteButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+    <meta name="google-site-verification" content="XrZbUkUct0KC8fuBfu9XJsjdaJh1MwWlzEhqvlSV2ko" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+
+<body>
+    
+<script>
+    function myGame() {
+        alert("Be warned, this quiz is tough! Now remember, for true or false questions, 'OK' is true and 'Cancel' is false. Good luck.");
+        var q1 = confirm("True or false: The last CIA agent the two crooks run into while they are going to the final auction disguiesed as a cleaner."); /* false */
+        var q2 = confirm("True or false: Nigel Holden wears a kilt"); /* false */
+        var q3 = prompt("What is the name of the scientist who challenges Gerald as the scientific dinner?"); /* CHESTERTON */
+        q3 = q3.toUpperCase();
+        var q4 = confirm("True or false: Hicklar loves these scientific metres/meetings!"); /* false */
+        var q5 = confirm("True or false: The two scientist's efforts taking are taking a more sophisticated route."); /* true */
+        var q6 = confirm("True or false: Gerald's other associate at the beginning of the film name is Ronald."); /*true*/
+        var q7 = confirm("True or false: Flo Flemming is Gerald's daughter."); /*false*/
+        var q8 = prompt("According to Sidney, what to all guard's wives have?"); /*LEGS*/
+        q8 = q8.toUpperCase();
+        var q9 = confirm("True or false: Gerlad hasn't been to the orient."); /*false*/
+        var q10 = prompt("What is the name of Elmer's wife?"); /*JOLENE*/
+        q10 = q10.toUpperCase();
+        var q11 = confirm("True or false: Sidney thinks steak is real food."); /*true*/
+        var q12 = prompt("Fill in the blank: 'Those ______s are after us!"); /*LIMEY*/
+        q12 = q12.toUpperCase();
+
+        var quizscore = 0;
+
+        if (q1 = false) {
+            quizscore = quizscore + 1;
+        }
+        if (q2 = false) {
+            quizscore = quizscore + 1;
+        }
+        if (q3 = "CHESTERTON") {
+            quizscore = quizscore + 1;
+        }
+        if (q4 = false) {
+            quizscore = quizscore + 1;
+        }
+        if (q5 = true) {
+            quizscore = quizscore + 1;
+        }
+        if (q6 = true) {
+            quizscore = quizscore + 1;
+        }
+        if (q7 = false) {
+            quizscore = quizscore + 1
+        }
+        if (q8 = "LEGS") {
+            quizscore = quizscore + 1;
+        }
+        if (q9 = false) {
+            quizscore = quizscore + 1;
+        }
+        if (q10 = "JOLENE") {
+            quizscore = quizscore + 1;
+        }
+        if (q11 = true) {
+            quizscore = quizscore + 1;
+        }
+        if (q12 = "LIMEY") {
+            quizscore = quizscore + 1;
+        }
+
+        alert("You got 12 out of 12, probably.");
+
+    }
+
+    function ranQuote() {
+        var quoteNum = Math.floor((Math.random() * 22) + 1);
+        switch (quoteNum) {
+            case 1:
+                alert("Save up Henry, save up.");
+                break;
+            case 2:
+                alert("Look out!");
+                break;
+            case 3:
+                alert("Love the new nose Sid; the accent stinks.");
+                break;
+            case 4:
+                alert("Of course. It was Gerald.");
+                break;
+            case 5:
+                alert("Let's wash our hands.");
+                break;
+            case 6:
+                alert("Money, money!");
+                break;
+            case 7:
+                alert("Don't mess about! You'll never get away with it, Sidney!");
+                break;
+            case 8:
+                alert("Can you believe a bank in a place like this?");
+                break;
+            case 9:
+                alert("We changed ends at half time!");
+                break;
+            case 10:
+                alert("Dis is a major double-cross!");
+                break;
+            case 11:
+                alert("What did they say?");
+                break;
+            case 12:
+                alert("This is absolutely unbelievable!");
+                break;
+            case 13:
+                alert("We ordered two kosher luncheons.");
+                break;
+            case 14:
+                alert("Comfortable! Who cares if he's comfortable, he's a crook!");
+                break;
+            case 15:
+                alert("How bloody juvinile can you get?");
+                break;
+            case 16:
+                alert("I come from a broken home.");
+                break;
+            case 17:
+                alert("Why not, Francesca?");
+                break;
+            case 18:
+                alert("I know things are cheap out east, but forget it.");
+                break;
+            case 19:
+                alert("Now we've all arrived, let's get down to business.");
+                break;
+            case 20:
+                alert("That's Dan's favourite thing in the world!");
+                break;
+            case 21:
+                alert("I'm trying to get this skirt on!");
+                break;
+            default:
+                alert("What's happened?");
+        }
+    
+    }
+
+
+</script>
+
+
+    <div id="sitehead"><h1>Bullseye!</h1></div>
+    <div id="subhead"><h2>It's on target and totally off the wall!</h2></div>
+
+<h3>Hello, welcome, and do not forget to save up! This is the official website dedicated to the 1990 movie Bullseye! Directed by Michael Winner, starring Michael Caine, Roger Moore and Sally Kirkland. Now, this is truly one of the best movies there is. Citizen Kane? Left in the dust. Casablanca? Not even close. Groundhog Day? No way. Bullseye is in a class of it's own, and it demands veneration and adoration for its greatness. This webstie is the proper shrine for that, and more! I hope your time here is as good as three millions pounds worth [pause] of diamonds.</h3>
+
+<div id="linkbox"><h4>Links</h4>
+    
+    <ul style="list-style-type:none;">
+
+    <li><a href="https://www.imdb.com/title/tt0101518/">IMDB Page</a></li>
+
+    <li id="utublink"><a href="https://www.youtube.com/channel/UCSsusk_zxePQBduEd5TW7_w">Dedicated YouTube channel</a></li>
+
+    <li><a href="https://i.imgur.com/4Gj75Ft.jpg" target="_blank">A fascinating news article about the film!</a></li>
+
+        </ul>
+</div>
+
+ <div id="gimag">
+       <img src="https://i.imgur.com/bmHNbyG.jpg" width="200" height="200" alt="hi" class="inline" />
+
+</div>
+
+     <div id="simag">
+         <img src="https://i.imgur.com/5lpVdOY.png" width="200" height="200" alt="hi" class="inline" />
+
+    </div>
+
+    <button id="playbutton1" class="button" onclick="myGame()"><span>Take the Bullseye Quiz!</span></button>
+
+    <button id="quoteButton" class="button" onclick="ranQuote()"><span>Get a random quote!</span></button>
+
+</body>
+
+</html> 
